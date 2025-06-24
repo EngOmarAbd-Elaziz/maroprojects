@@ -21,7 +21,7 @@ body {
 }
 
 #buttons {
-    display: row;
+    display: none;
 }
 
 button {
