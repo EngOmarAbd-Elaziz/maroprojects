@@ -77,6 +77,7 @@ h1, p, .message {
 }
 #buttons{
     display: none;
+    justify-content: center;
     width: 80%;
 }
 
