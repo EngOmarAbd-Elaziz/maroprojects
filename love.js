@@ -15,9 +15,9 @@ function showMessages() {
 showMessages();
 
 const noBtn = document.getElementById("noBtn");
-noBtn.addEventListener("mouseover", () => {
-    const maxX = window.innerWidth - 100;
-    const maxY = window.innerHeight - 50;
+noBtn.addEventListener("click", () => {
+    const maxX = window.innerWidth - 80;
+    const maxY = window.innerHeight - 80;
     const randX = Math.random() * maxX;
     const randY = Math.random() * maxY;
     noBtn.style.left = `${randX}px`;
