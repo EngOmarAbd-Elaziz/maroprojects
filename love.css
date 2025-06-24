@@ -93,7 +93,12 @@ button {
         padding: 12px 20px;
         font-size: 1em;
         max-width: 90%;
-        margin-left: -15px;
+    }
+    #yesBtn{
+        margin-left: -25px;
+    }
+    #noBtn{
+        margin-left: 20px;
     }
 
     .hearts {
