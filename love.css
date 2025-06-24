@@ -47,7 +47,7 @@ button {
     position: absolute;
 }
 
-.flower {
+.hearts {
     position: fixed;
     bottom: -50px;
     width: 40px;
@@ -87,7 +87,7 @@ button {
   font-size: 1em;
   max-width: 95%;
 }
-  .heart{
+  .hearts{
     width: 30px;
     height: 30px;
   }
