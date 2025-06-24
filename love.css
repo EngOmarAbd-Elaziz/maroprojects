@@ -22,8 +22,7 @@ body {
 
 #buttons {
     display: none;
-    justify-content: center;
-    flex-wrap: wrap;
+    width:90%;
 }
 
 button {
