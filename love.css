@@ -75,6 +75,10 @@ h1, p, .message {
   max-width: 90%;
   margin: auto;
 }
+#buttons{
+    display: none;
+    width: 80%;
+}
 
 button {
   padding: 12px 20px;
