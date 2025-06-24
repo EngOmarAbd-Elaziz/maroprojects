@@ -22,6 +22,7 @@ body {
 
 #buttons {
     display: none;
+    justiify-content: center;
     margin-left: -25px;
     width: 90%;
 }
@@ -83,7 +84,8 @@ button {
     
     #buttons {
         display: none;
-        justify-content: space-around;
+        justify-content: center;
+        margin:-25px;
         width: 90%;
     }
 
