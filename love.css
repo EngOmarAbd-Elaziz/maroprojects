@@ -22,6 +22,7 @@ body {
 
 #buttons {
     display: none;
+    justify-content: center;
     width:90%;
 }
 
@@ -86,7 +87,7 @@ button {
   font-size: 1em;
   max-width: 95%;
 }
-  .flower, .heart-fall {
+  .heart{
     width: 30px;
     height: 30px;
   }
