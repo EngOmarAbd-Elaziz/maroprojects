@@ -66,3 +66,28 @@ button {
         transform: translateY(-100vh) rotate(360deg);
     }
 }
+@media (max-width: 600px) {
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ffe6e6, #e6f7ff);
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+h1, p, .message {
+  word-wrap: break-word;
+  max-width: 90%;
+  margin: auto;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1em;
+  max-width: 90%;
+}
+  .flower, .heart-fall {
+    width: 30px;
+    height: 30px;
+  }
