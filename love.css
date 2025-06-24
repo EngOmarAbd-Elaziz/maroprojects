@@ -77,6 +77,12 @@ button {
         text-align: center;
         padding: 20px;
         overflow-x: hidden;
+    } 
+    
+    #buttons {
+    display: none;
+    justify-content: center;
+    width: 90%;
     }
 
     h1,
@@ -91,7 +97,7 @@ button {
     button {
         padding: 12px 20px;
         font-size: 1em;
-        max-width: 95%;
+        max-width: 90%;
     }
 
     .hearts {
