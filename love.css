@@ -22,7 +22,7 @@ body {
 
 #buttons {
     display: none;
-    width:80%;
+    width:50%;
 }
 
 button {
@@ -78,7 +78,7 @@ h1, p, .message {
 #buttons{
     display: none;
     justify-content: center;
-    width: 80%;
+    width: 50%;
 }
 
 button {
