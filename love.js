@@ -16,8 +16,8 @@ showMessages();
 
 const noBtn = document.getElementById("noBtn");
 noBtn.addEventListener("click", () => {
-    const maxX = window.innerWidth - 80;
-    const maxY = window.innerHeight - 80;
+    const maxX = window.innerWidth - 100;
+    const maxY = window.innerHeight - 50;
     const randX = Math.random() * maxX;
     const randY = Math.random() * maxY;
     noBtn.style.left = `${randX}px`;
@@ -27,20 +27,20 @@ noBtn.addEventListener("click", () => {
 function showLove() {
     alert("I love you too ❤️");
 } 
-function createFlower() {
-    const flower = document.createElement("img");
-    flower.src = "https://pngimg.com/uploads/heart/heart_PNG51313.png";
-    flower.className = "flower";
+function createHearts() {
+    const hearts = document.createElement("img");
+    hearts.src = "https://pngimg.com/uploads/heart/heart_PNG51313.png";
+    hearts.className = "hearts";
 
     const isLeft = Math.random() < 0.5;
-    flower.style.left = isLeft ? `${Math.random() * 30}px` : "";
-    flower.style.right = !isLeft ? `${Math.random() * 30}px` : "";
+    hearts.style.left = isLeft ? `${Math.random() * 30}px` : "";
+    hearts.style.right = !isLeft ? `${Math.random() * 30}px` : "";
 
-    document.body.appendChild(flower);
+    document.body.appendChild(hearts);
 
     setTimeout(() => {
-        flower.remove();
+        hearts.remove();
     }, 5000);
 }
 
-setInterval(createFlower, 800);
+setInterval(createHearts, 800);
