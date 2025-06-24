@@ -22,6 +22,8 @@ body {
 
 #buttons {
     display: none;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 button {
@@ -67,15 +69,7 @@ button {
     }
 }
 @media (max-width: 600px) {
-    body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #ffe6e6, #e6f7ff);
-  color: #333;
-  text-align: center;
-  padding: 20px;
-  overflow-x: hidden;
-}
-
+    
 h1, p, .message {
   font-size: 32px;
   word-wrap: break-word;
@@ -86,7 +80,7 @@ h1, p, .message {
 button {
   padding: 12px 20px;
   font-size: 1em;
-  max-width: 90%;
+  max-width: 95%;
 }
   .flower, .heart-fall {
     width: 30px;
