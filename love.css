@@ -22,7 +22,7 @@ body {
 
 #buttons {
     display: none;
-    
+    margin-left: -25px;
     width: 90%;
 }
 
