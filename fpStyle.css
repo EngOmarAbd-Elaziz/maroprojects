@@ -1,0 +1,348 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #000000, #1c0152, #000000);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+nav {
+    color: #fff;
+    margin-top: 10px;
+    width: 99.3%;
+    height: 40px;
+    padding: 15px 0px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.nav-logo img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.gradient-text {
+    margin-top: 10px;
+    font-size: 24px;
+    background: linear-gradient(270deg, #ff00cc, #3333ff, #00ffff);
+    background-size: 200% auto;
+    animation: shine 3s linear infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 4pxs;
+    margin: 0px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.nav-item {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgba(240, 255, 255, 0.512);
+    padding: 5px 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: chartreuse;
+}
+
+.nav-link:active {
+    color: rgb(0, 0, 0);
+    background-color: chartreuse;
+}
+
+.nav-link-reg {
+    text-decoration: none;
+    color: azure;
+    padding: 5px 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-link-reg:hover {
+    color: rgb(3, 238, 241);
+}
+
+.nav-link-reg:active {
+    color: rgb(0, 0, 0);
+    background-color: rgb(3, 238, 241);
+}
+
+
+.content {
+    margin-bottom: 200px;
+    margin-top: 300px;
+}
+
+.typed-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+#typed {
+    color: rgb(199, 205, 211);
+    width: 100%;
+    height: 70px;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    margin-bottom: 0;
+    text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.882);
+}
+
+
+.typed-fix {
+    visibility: hidden;
+    font-size: 64px;
+    white-space: nowrap;
+}
+
+
+.content>p {
+    color: rgb(199, 205, 211);
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;
+    margin-top: 5px;
+}
+
+.part1 {
+    position: relative;
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.part1 h1 {
+    position: absolute;
+    font-size: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff;
+    z-index: 1;
+    top: 210px;
+    left: 350px;
+    right: 0;
+    opacity: 0;
+}
+
+.part1 p {
+    width: 65%;
+    position: absolute;
+    font-size: 24px;
+    color: #ffffffbf;
+    z-index: 1;
+    top: 290px;
+    left: 10px;
+    right: 0;
+    padding: 2px;
+    opacity: 0;
+    transition: opacity 3s ease-out;
+    transition: opacity 1s ease-in;
+
+}
+
+.part1 img {
+    position: relative;
+    height: 600px;
+    width: 500px;
+    background-size: cover;
+    margin: auto;
+    border-radius: 50%;
+    transition: 1s ease-in;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.part1 img,
+.part1 h1,
+.part1 p {
+    opacity: 0;
+    transform: translateX(0);
+    transition: all 1.5s ease-out;
+}
+
+.part1.animate img {
+    opacity: 1;
+    transform: translateX(550px) scale(1.2);
+}
+
+.part1.animate h1,
+.part1.animate p {
+    opacity: 1;
+    transform: translateX(10px);
+}
+
+
+.part2 {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.314);
+}
+
+.part2 h2 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.part2 p {
+    color: #ffffffbf;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.part2 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-bottom: 0;
+}
+
+.part2 img:hover {
+    transform: scale(1.2);
+}
+
+.part2 h6 {
+    color: #ffffff91;
+    font-size: 12px;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.part3 {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.314);
+}
+
+.part3 h2 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.part3 p {
+    color: #ffffffbf;
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: 3px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+    border: 2px solid #55555500;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.carousel-track button {
+    width: 400px;
+    height: 90px;
+    background: linear-gradient(135deg, #03dac51c, #0187876a);
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, background 1s ease-in-out;
+}
+
+.carousel-track button:hover {
+    transform: scale(1.02);
+    background: linear-gradient(135deg, #00b3a18b, #016a6054);
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(2120px);
+    background: transparent;
+    color: rgba(255, 255, 255, 0.279);
+    border: none;
+    font-size: 32px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.arrow:hover {
+    color: #03dac6;
+}
+
+.arrow.left {
+    left: 450px;
+}
+
+.arrow.right {
+    right: 450px;
+}
+.p2{
+    margin-bottom: 200px;
+}
